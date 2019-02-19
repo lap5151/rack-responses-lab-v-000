@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    time = Kernel.timestamp
+    time = Kernel.time
 
     resp.write "#{time}\n"
 
