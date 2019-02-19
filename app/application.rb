@@ -5,7 +5,7 @@ class Application
 
     resp.write "#{Time.new}\n"
 
-    if Time.new < 12
+    if Time.new.to_i < 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
